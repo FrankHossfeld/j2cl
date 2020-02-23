@@ -5,3 +5,14 @@
 # See https://github.com/github/gitignore/tree/master/Global for a list of global ignore rules.
 /bazel-*
 /samples/helloworld/bazel-*
+.idea/*
+.idea/.gitignore
+.idea/codeStyles/
+.idea/compiler.xml
+.idea/encodings.xml
+.idea/j2cl.iml
+.idea/markdown-navigator-enh.xml
+.idea/markdown-navigator.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
