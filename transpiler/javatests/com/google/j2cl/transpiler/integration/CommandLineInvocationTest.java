@@ -18,6 +18,7 @@ package com.google.j2cl.transpiler.integration;
 import static com.google.j2cl.transpiler.integration.TranspilerTester.newTester;
 import static com.google.j2cl.transpiler.integration.TranspilerTester.newTesterWithDefaults;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;

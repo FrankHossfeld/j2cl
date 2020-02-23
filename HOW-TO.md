@@ -99,13 +99,6 @@ Then run:
 
 4. `./build.sh` (on macOS) or `./build.cmd` (on Windows 10)
 
-
-
-
-
-
-
-
 5. `mvn clean install`
 
 
@@ -114,9 +107,11 @@ Then run:
 
 
 
-### Working Maven versions:
+## Maven versions:
+Check, that you have installed
 
-* 3.6.1 -> not working
+
+* 3.6.1 -> not workingF
 * 3.6.2 -> working
 * 3.6.3 -> working
 

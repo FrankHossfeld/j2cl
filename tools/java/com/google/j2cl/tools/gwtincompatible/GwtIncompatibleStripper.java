@@ -21,6 +21,8 @@ import com.google.j2cl.common.Problems.FatalError;
 import java.io.IOException;
 import java.nio.file.FileSystem;
 import java.util.List;
+import java.io.File;
+
 
 /**
  * A helper to comment out source code elements annotated with @GwtIncompatible so that they are

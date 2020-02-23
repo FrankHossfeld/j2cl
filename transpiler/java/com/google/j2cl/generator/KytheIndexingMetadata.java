@@ -19,6 +19,7 @@ import com.google.gson.Gson;
 import com.google.gson.annotations.SerializedName;
 import java.util.ArrayList;
 import java.util.List;
+import java.io.File;
 
 /** Representation of Kythe indexing metadata */
 @SuppressWarnings("unused") // Fields are accessed through reflection by GSON.
