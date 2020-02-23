@@ -15,8 +15,4 @@
 .idea/misc.xml
 .idea/modules.xml
 .idea/vcs.xml
-maven/ast-annotations/target/
-maven/bootstrap/target/
-maven/junit/closure-test/target/
-maven/junit/processor/dependency-reduced-pom.xml
-maven/junit/processor/target/
+.idea/*
