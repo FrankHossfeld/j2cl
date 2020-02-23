@@ -45,7 +45,7 @@ public final class FrontendUtilsTest {
   @Test
   public void testGetJavaPath_Good() {
     for (int i = 0; i < JAVA_PATHS_GOOD.length; i++) {
-      String path = JAVA_PATHS_GOOD[i][0] + "/" + JAVA_PATHS_GOOD[i][1];
+      String path = JAVA_PATHS_GOOD[i][0] + File.separator + JAVA_PATHS_GOOD[i][1];
       String expectedPath = JAVA_PATHS_GOOD[i][1];
       assertThat(FrontendUtils.getJavaPath(path)).isEqualTo(expectedPath);
     }

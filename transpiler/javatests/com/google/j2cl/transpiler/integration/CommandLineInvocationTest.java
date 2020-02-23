@@ -86,9 +86,9 @@ public class CommandLineInvocationTest extends TestCase {
 
   public void testMissingSrcjar() {
     newTesterWithDefaults()
-        .addArgs("/foo/bar/Missing.srcjar")
+        .addArgs(File.separator + "foo" + File.separator + "bar" + File.separator + "Missing.srcjar")
         .assertTranspileFails()
-        .assertErrorsContainsSnippets("File '/foo/bar/Missing.srcjar' not found.");
+        .assertErrorsContainsSnippets("File '" + File.separator + "foo" + File.separator + "bar" + File.separator + "Missing.srcjar' not found.");
   }
 
   public void testCorruptSrcjar() {

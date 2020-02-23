@@ -36,7 +36,7 @@ public class GwtIncompatibleStripper {
           FrontendUtils.getAllSources(files, problems)
               .filter(f -> f.targetPath().endsWith(".java"))
               .collect(ImmutableList.toImmutableList());
-      JavaPreprocessor.preprocessFiles(allPaths, outputZipFileSystem.getPath("/"), problems);
+      JavaPreprocessor.preprocessFiles(allPaths, outputZipFileSystem.getPath(File.separator), problems);
 
       try {
         outputZipFileSystem.close();

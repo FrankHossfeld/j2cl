@@ -62,7 +62,7 @@ public class KytheIndexingMetadata {
     @SerializedName("target_end")
     private final int targetEnd;
 
-    private final String edge = "/kythe/edge/imputes";
+    private final String edge = File.separator + "kythe" + File.separator + "edge" + File.separator + "imputes";
 
     /** Info about source .java file that contains current entity. */
     @SerializedName("source_vname")

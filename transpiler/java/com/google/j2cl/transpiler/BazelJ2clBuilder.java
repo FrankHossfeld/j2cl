@@ -130,7 +130,7 @@ final class BazelJ2clBuilder extends BazelWorker {
   }
 
   private static Path getZipOutput(String output, Problems problems) {
-    return FrontendUtils.initZipOutput(output, problems).getPath("/");
+    return FrontendUtils.initZipOutput(output, problems).getPath(File.separator);
   }
 
   private static List<String> getPathEntries(String path) {

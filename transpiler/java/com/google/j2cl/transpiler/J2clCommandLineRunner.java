@@ -129,7 +129,7 @@ public final class J2clCommandLineRunner extends CommandLineTool {
 
   private static Path getZipOutput(String output, Problems problems) {
     FileSystem newFileSystem = FrontendUtils.initZipOutput(output, problems);
-    return newFileSystem == null ? null : newFileSystem.getPath("/");
+    return newFileSystem == null ? null : newFileSystem.getPath(File.separator);
   }
 
   private static List<String> getPathEntries(String path) {

@@ -351,7 +351,7 @@ public class TranspilerTester {
         Path inputPath = tempDir.resolve("input");
         Files.createDirectories(inputPath);
 
-        checkState(!packageName.contains(".") && !packageName.contains("/"));
+        checkState(!packageName.contains(".") && !packageName.contains(File.separator));
         Path packagePath = inputPath.resolve(packageName);
         Files.createDirectories(packagePath);
 

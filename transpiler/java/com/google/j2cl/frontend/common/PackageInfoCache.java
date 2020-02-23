@@ -194,7 +194,7 @@ public class PackageInfoCache {
 
   /** Returns the first classpath entry that provides class file for the given type. */
   private String findOriginClassPathEntry(String typeName) {
-    String classFilePath = typeName.replace(".", "/") + ".class";
+    String classFilePath = typeName.replace(".", File.separator) + ".class";
 
     URL typeResource = resourcesClassLoader.getResource(classFilePath);
     if (typeResource == null) {
@@ -208,7 +208,7 @@ public class PackageInfoCache {
       String resourcePath = typeResource.getFile();
       String originClassPathEntry =
           resourcePath.substring(0, resourcePath.length() - classFilePath.length());
-      if (originClassPathEntry.endsWith("/")) {
+      if (originClassPathEntry.endsWith(File.separator)) {
         originClassPathEntry = originClassPathEntry.substring(0, originClassPathEntry.length() - 1);
       }
       if (originClassPathEntry.endsWith("!")) {

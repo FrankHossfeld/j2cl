@@ -121,11 +121,11 @@ public class FrontendUtils {
 
   /** Returns the index after root or the end index if not found. */
   private static int indexAfterRoot(String path, String root) {
-    String rootPath = root + "/";
+    String rootPath = root + File.separator;
     if (path.startsWith(rootPath)) {
       return rootPath.length();
     }
-    rootPath = "/" + rootPath;
+    rootPath = File.separator + rootPath;
     int index = path.indexOf(rootPath);
     return index == -1 ? path.length() : index + rootPath.length();
   }
